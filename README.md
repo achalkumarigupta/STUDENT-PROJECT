@@ -127,4 +127,23 @@ git push -u origin main
 Use code with caution.Step 13 — Create Version 2 (Make a Change)Open login.html and change <h1>Student Management System</h1> to <h1>Student Management System - Version 2</h1>. Then run:bashgit status
 git add login.html
 git commit -m "Version 2 - Updated login page heading"
-git push
+git push     
+
+
+
+
+
+
+
+
+
+📋 Phase 1 — Global Identity SetupRun these commands in your Git Bash terminal once to set up your profile:bashgit config --global user.name "achalkumarigupta"
+git config --global user.email "achalgupta7722@gmail.com"
+Use code with caution.Verify your registration details:bashgit config --global user.name
+git config --global user.email
+Use code with caution.📁 Phase 2 — Level 1: Local Setup & Basic ChangesInitialize Project: Run mkdir "StudentProject", cd "StudentProject", and git init.Create Files: Run touch login.html home.html faculty.html student.html hod.html README.md.Code Implementation: Create the 5 HTML files (login, home, faculty, student, hod) with unique content and a README.md file (similar to the structure provided in the original instructions).Initial Commit: Run git add . and git commit -m "Initial version of Student Management System".Push to Remote: Run git branch -M main, git remote add origin https://github.com, and git push -u origin main.🌿 Phase 3 — Level 2: Feature Branching & MergesCreate Feature Branches: Run git switch -c faculty-feature and git switch -c student-feature to isolate changes.Make Changes: Modify faculty.html and student.html with new content.Commit Changes: Use git add <file> and git commit -m "..." for each file.Push Branches: Run git push -u origin <branch-name>.Merge & Push: Switch back to main (git switch main), merge branches (git merge <branch-name>), and git push.🔄 Project Architecture Visual Flow Diagramtext                  [faculty-feature Branch] ➔ [Modify faculty.html] ➔ [Commit & Push] ──┐
+                 /                                                                     ▼
+[Local Main Branch] ➔ [Initial Commit] ➔ [Link Remote]                               [Merge into Main] ➔ [Final Git Push]
+                 \                                                                     ▲
+                  [student-feature Branch] ➔ [Modify student.html] ➔ [Commit & Push] ──┘
+Use code with caution.Would you like to explore resolving merge conflicts next, or do you want to start building a custom CSS visual layout framework for your five screens?
